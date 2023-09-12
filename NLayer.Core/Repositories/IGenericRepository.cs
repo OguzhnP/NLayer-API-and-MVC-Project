@@ -5,7 +5,7 @@ namespace NLayer.Core.Repositories
     public interface IGenericRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int id);
-        IQueryable<T> GetAll(Expression<Func<T, bool>> expression);
+        IQueryable<T> GetAll();
         //productRepo.where(x=>x.id< 6).orderBy().toList();
         //veri tabanına gitmeden önce şartı sorgulyıp daha sonra sıralayıp getirmesi için böyle bir where sorgusu oluşturulur
         IQueryable<T> Where(Expression<Func<T, bool>> expression);
