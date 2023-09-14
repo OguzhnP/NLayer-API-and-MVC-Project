@@ -23,7 +23,7 @@ builder.Services.AddControllers(options => options.Filters.Add(new ValidateFilte
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
