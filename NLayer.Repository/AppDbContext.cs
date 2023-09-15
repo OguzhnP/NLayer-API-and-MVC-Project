@@ -21,11 +21,11 @@ namespace NLayer.Repository
 
             modelBuilder.Entity<ProductFeature>().HasData(new ProductFeature()
             {
-                Id=1,
-                Color="Kırmızı",
-                Height=100,
-                Width=200,
-                ProductId=1
+                Id = 1,
+                Color = "Kırmızı",
+                Height = 100,
+                Width = 200,
+                ProductId = 1
             },
             new ProductFeature()
             {

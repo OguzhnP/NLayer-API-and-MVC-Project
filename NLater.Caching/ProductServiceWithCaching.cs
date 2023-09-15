@@ -50,8 +50,8 @@ namespace NLater.Caching
         }
 
         public async Task<bool> AnyAsync(Expression<Func<Product, bool>> expression)
-        { 
-            return await _repository.AnyAsync(expression); 
+        {
+            return await _repository.AnyAsync(expression);
         }
 
         public Task<IEnumerable<Product>> GetAllAsync()
